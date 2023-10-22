@@ -93,6 +93,7 @@
   (http/create-server
    {::http/routes #(route/expand-routes routes)
     ::http/type :jetty
+    ::http/host "0.0.0.0"
     ::http/port 3000}))
 
 (defn -main []
